@@ -1,0 +1,147 @@
+$primary-color: #97bc62ff;
+//this code is for secondary color
+$secondary-color: #2c5f2d;
+//this code is for tertiary color
+$tertiary-color: #f2f2f2;
+//this code is for quaternary color
+$quaternary-color: #ffffff;
+//this code is for blurry background color
+
+//fonts family
+$font-family: "Roboto", sans-serif;
+//Fonts (sizes, familys)
+
+body {
+  position: relative;
+  & a:hover {
+    color: $quaternary-color;
+  }
+  & a {
+    color: $secondary-color;
+    font-family: $font-family;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+}
+nav {
+  background-color: $primary-color;
+  width: 100%;
+  border: $primary-color solid 1px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  & header {
+    padding-left: 5rem;
+    & h2 {
+      color: $secondary-color;
+      font-family: $font-family;
+      font-size: 1.5rem;
+      margin: 0px 10px;
+    }
+  }
+
+  & ul {
+    display: flex;
+    list-style: none;
+  }
+  & h3 {
+    color: $secondary-color;
+    font-family: $font-family;
+    font-size: 1.5rem;
+    margin: 0px 10px;
+  }
+  & li {
+    list-style: none;
+    margin: 0px 10px;
+  }
+}
+
+main {
+  background-color: $tertiary-color;
+  width: 100%;
+  height: 100vh;
+  padding-top: 5rem;
+  padding-bottom: 10%;
+  & h1 {
+    color: $primary-color;
+    font-family: $font-family;
+    font-size: 2rem;
+    text-align: center;
+  }
+  & h2 {
+    color: $primary-color;
+    font-family: $font-family;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  & h3 {
+    color: $primary-color;
+    font-family: $font-family;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  & p {
+    color: $primary-color;
+    font-family: $font-family;
+    font-size: 1rem;
+    text-align: center;
+  }
+  & img {
+    display: block;
+    width: 60%;
+    height: 60%;
+  }
+  & ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    & li {
+      list-style: none;
+      margin: 0px 10px;
+    }
+  }
+  section {
+    padding-bottom: 5rem;
+  }
+}
+footer {
+  background-color: $primary-color;
+  border-radius: 10px 10px 0px 0px;
+  position: fixed;
+  bottom: 0px;
+  border: $primary-color solid 1px;
+
+  width: 100%;
+  & div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & h3 {
+      color: $secondary-color;
+      font-family: $font-family;
+      font-size: 1.2rem;
+      margin: 0px 10px;
+    }
+    & p {
+      color: $secondary-color;
+      font-family: $font-family;
+      font-size: 1rem;
+      margin: 0px 10px;
+    }
+    button {
+      background-color: $primary-color;
+      color: $secondary-color;
+      font-family: $font-family;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      margin: 0px 10px;
+      cursor: pointer;
+    }
+  }
+}
